@@ -1,35 +1,284 @@
-<!-- ========== MAIN CONTENT ========== -->
-<main id="content" role="main" style="width: 100%; height: 100%;">
-  <div class="center text-center" >
-    <div class="mb-7">
-      <h1 class="text-white font_Inter">Bem-vindo a PMG Systems. Um novo site estará disponível em breve!</h1>
+<!-- Start Preloader Area -->
+<ng-template #customLoadingTemplate>
+  <div id="preloader" class="tlp-preloader">
+    <div class="animation-preloader">
+      <div class="tlp-spinner"></div>
+      <img src="media/preloader.png" alt="Preloader">
     </div>
-
-    <div class="js-countdown row">
-      <div class="col-6 col-sm-3 mb-5 mb-sm-0">
-        <h2 class="js-cd-days h1 text-white mb-0 font_Inter"><span id="days"> {{daysToDday}} </span></h2>
-        <h6 class="text-white-70 mb-0 font_Inter">Dias</h6>
-      </div>
-      <!-- End Col -->
-
-      <div class="col-6 col-sm-3 mb-5 mb-sm-0">
-        <h2 class="js-cd-hours h1 text-white mb-0 font_Inter"><span id="hours"> {{hoursToDday}} </span></h2>
-        <h6 class="text-white-70 mb-0 font_Inter">Horas</h6>
-      </div>
-      <!-- End Col -->
-
-      <div class="col-6 col-sm-3">
-        <h2 class="js-cd-minutes h1 text-white mb-0 font_Inter"><span id="minutes"> {{minutesToDday}} </span></h2>
-        <h6 class="text-white-70 mb-0 font_Inter">Minutos</h6>
-      </div>
-      <!-- End Col -->
-
-      <div class="col-6 col-sm-3">
-        <h2 class="js-cd-seconds h1 text-white mb-0 font_Inter"><span id="seconds"> {{secondsToDday}} </span></h2>
-        <h6 class="text-white-70 mb-0 font_Inter">Segundos</h6>
-      </div>
-      <!-- End Col -->
-    </div>
-    <!-- End Row -->
   </div>
-</main>
+</ng-template>
+<!-- End Preloader Area -->
+
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '0px' }"></ngx-loading>
+
+<div id="wrapper" class="wrapper">
+  <div id="main_content">
+
+    <!--=====================================-->
+    <!--=            Navbar Start           =-->
+    <!--=====================================-->
+    <header class="sticky-on">
+      <div id="sticky-placeholder"></div>
+      <div id="navbar-wrap" class="navbar-wrap">
+        <div class="navbar-layout1">
+          <div class="container">
+            <div class="row no-gutters d-flex align-items-center position-relative">
+              <div class="col-lg-2 d-flex justify-content-start">
+                <div class="temp-logo text-center">
+                  <a href="index.html" class="default-logo">
+                    <img src="media/logo-dark.png" width="120" alt="logo" class="img-fluid">
+                  </a>
+                  <a href="index.html" class="sticky-logo">
+                    <img src="media/logo-light.png" width="120" alt="logo" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-7 d-flex possition-static">
+                <nav id="dropdown" class="template-main-menu">
+                  <ul>
+                    <li class="position-static d-none d-lg-block">
+                      <a href="">Início</a>
+                    </li>
+                    <li class="d-block d-lg-none">
+                      <a href="">Início</a>
+                    </li>
+                    <li>
+                      <a href="sobre-nos">Sobre</a>
+                    </li>
+                    <li>
+                      <a href="#">Serviços</a>
+                      <ul class="dropdown-menu-col-1">
+                        <li><a href="servicos/construcao-de-site-sistema"><span>Desenvolvimento de Sistemas/Sites Customizados</span></a>
+                        </li>
+                        <li><a href="servicos/consultoria-empresarial"><span>Consultoria Empresarial</span></a>
+                        </li>
+                        <li><a href="servicos/consultoria-estrategica"><span>Consultoria Estratégica</span></a>
+                        </li>
+                        <li><a href="servicos/comercializacao-sistema-pdv"><span>Comercialização de Sistemas PDV</span></a>
+                        </li>
+                        <li><a href="servicos/comercializacao-sistema-erp"><span>Comercialização de Sistemas de Gestão (ERP)</span></a>
+                        </li>
+                        <li><a href="servicos/emissao-certificado-digital"><span>Emissão de Certificado Digital</span></a>
+                        </li>
+                        <li><a href="servicos/venda-equipamentos-de-informatica"><span>Venda de Equipamentos de Informática</span></a>
+                        </li>
+                        <li><a href="servicos/revenda-maquina-de-cartao"><span>Revenda de Máquinas de Cartão</span></a>
+                        </li>
+                        <li><a href="servicos/design-grafico-redes-sociais"><span>Design Gráfico para Redes Sociais</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!--<li>
+                      <a href="portfolio">Portfólio</a>
+                    </li>-->
+                    <li>
+                      <a href="precos">Preços</a>
+                    </li>
+                    <li>
+                      <a href="faq">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="blog">Blog</a>
+                    </li>
+                    <li>
+                      <a href="contato">Contato</a>
+                    </li>
+                    <li class="d-block d-lg-none">
+                      <a href="orcamento">Orçamento</a>
+                    </li>          
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-3 d-flex justify-content-end">
+                <ul class="header-action-items">
+                  <li class="single-item mr-2">
+                    <a class="item-btn btn-ghost btn-light" href="orcamento"><span>Orçamento</span></a>
+                  </li>
+                  <li class="single-item">
+                    <button type="button" class="offcanvas-menu-btn menu-status-open">
+                      <span class="menu-btn-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--=====================================-->
+    <!--=              Navbar End           =-->
+    <!--=====================================-->
+
+    <router-outlet></router-outlet>
+
+    <!--=====================================-->
+			<!--=     Footer Section Area Start     =-->
+			<!--=====================================-->
+			<footer  id="footer-wrap-layout1" class="footer-wrap-layout1 bg-color-light">
+				<div class="footer-top-layout1 bg-no-repeat bg-size-cover bg-position-center"
+					data-bg-image="media/element/element3.png">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+								<div class="footer-widgets">
+									<div class="footer-logo">
+										<a href=""><img src="media/footer-logo.png" style="width: 100%;" alt="Logo PMG"></a>
+									</div>
+									<p class="about-paragraph">Estamos conectados para melhor atenteder você. Entre em contato com a gente agora mesmo!</p>
+									<ul class="footer-social">
+										<li><a href="https://www.facebook.com/pmgsystems" target="_blanck"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="https://twitter.com/pmgsystems" target="_blanck"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.instagram.com/pmgsystems" target="_blanck"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/company/pmg-systems" target="_blanck"><i class="fab fa-linkedin-in"></i></a></li>
+										<li><a href="https://www.youtube.com/channel/UCFAKyEJoWoUYT0BvfqX3sww" target="_blanck"><i class="fab fa-youtube"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+								<div class="footer-widgets">
+									<h3 class="footer-widget-heading">Links importantes</h3>
+									<ul class="footer-menu">
+										<li><a href="sobre-nos">Sobre nós</a></li>
+										<!--<li><a href="portfolio">Portfólio</a></li>-->
+										<li><a href="precos">Preços</a></li>
+                    <li>
+                      <a href="faq">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="blog">Blog</a>
+                    </li>
+                    <li>
+                      <a href="contato">Contato</a>
+                    </li>
+                    <li>
+                      <a href="orcamento">Orçamento</a>
+                    </li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+								<div class="footer-widgets">
+									<h3 class="footer-widget-heading">Nossos serviços</h3>
+									<ul class="footer-menu">
+										<li><a href="servicos/construcao-de-site-sistema"><span>Desenvolvimento de Sistemas/Sites Customizados</span></a>
+                    </li>
+                    <li><a href="servicos/consultoria-empresarial"><span>Consultoria Empresarial</span></a>
+                    </li>
+                    <li><a href="servicos/consultoria-estrategica"><span>Consultoria Estratégica</span></a>
+                    </li>
+                    <li><a href="servicos/comercializacao-sistema-pdv"><span>Comercialização de Sistemas PDV</span></a>
+                    </li>
+                    <li><a href="servicos/comercializacao-sistema-erp"><span>Comercialização de Sistemas de Gestão (ERP)</span></a>
+                    </li>
+                    <li><a href="servicos/emissao-certificado-digital"><span>Emissão de Certificado Digital</span></a>
+                    </li>
+                    <li><a href="servicos/venda-equipamentos-de-informatica"><span>Venda de Equipamentos de Informática</span></a>
+                    </li>
+                    <li><a href="servicos/revenda-maquina-de-cartao"><span>Revenda de Máquinas de Cartão</span></a>
+                    </li>
+                    <li><a href="servicos/design-grafico-redes-sociais"><span>Design Gráfico para Redes Sociais</span></a>
+                    </li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+								<div class="footer-widgets">
+									<h3 class="footer-widget-heading">Contato</h3>
+									<p>Somos a empresa pioneira em Tecnologia da Informação em Pindaí-BA. Atendemos a toda a região do Sudoeste Baiano, Brasil e mundo. Entre em contato com a gente agora mesmo.</p>
+									<ul class="footer-contact">
+										<li><i class="flaticon-placeholder"></i>Rua Ayrton Senna, nº 18. Bairro Vila Nova. Pindaí-BA. 46360-00.
+										</li>
+										<li><i class="flaticon-plane"></i>pmg.systems@outlook.com</li>
+										<li><i class="flaticon-telephone"></i>+55 71 9 8146-6811</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom-layout1 bg-color-accent">
+					<div class="container">
+						<div class="copy-right-wrap">
+							<p class="copy-right-text">© {{year}} PMG Systems - CNPJ: 46.229.276/0001-47</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--=====================================-->
+			<!--=      Footer Section Area End      =-->
+			<!--=====================================-->
+			<!--=====================================-->
+			<!--=       Template Search Start       =-->
+			<!--=====================================-->
+			<div  id="template-search" class="template-search">
+				<button type="button" class="close">×</button>
+				<form class="search-form">
+					<input type="search" value="" placeholder="Pesquise aqui..." />
+					<button type="submit" class="search-btn">
+						<i class="flaticon-search"></i>
+					</button>
+				</form>
+			</div>
+			<!--=====================================-->
+			<!--=        Template Search End        =-->
+			<!--=====================================-->
+			<!--=====================================-->
+			<!--=         Offcanvas Start           =-->
+			<!--=====================================-->
+			<div  class="offcanvas-menu-wrap" id="offcanvas-wrap" data-position="left">
+				<div class="close-btn offcanvas-close"><i class="fas fa-times"></i></div>
+				<div class="offcanvas-content">
+					<div class="offcanvas-logo">
+						<a href=""><img src="media/logo.png" width="100" height="100" alt="logo"></a>
+					</div>
+					<nav>
+						<ul class="offcanvas-nav">
+							<li class="nav-item">
+								<a href="">Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="sobre-nos">Sobre</a>
+							</li>
+              <li class="nav-item">
+								<a href="servicos">Serviços</a>
+							</li>
+              <!--<li class="nav-item">
+								<a href="portfolio">Portfólio</a>
+							</li>-->
+							<li class="nav-item">
+								<a href="precos">Preços</a>
+							</li>							
+							<li class="nav-item">
+								<a href="faq">FAQ</a>
+							</li>
+              <li class="nav-item">
+								<a href="blog">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a href="contato">Contato</a>
+							</li>
+              <li class="nav-item">
+								<a href="orcamento">Orçamento</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="offcanvas-footer">
+						<div class="item-title">Siga a gente</div>
+						<ul class="offcanvas-social">
+							<li><a href="https://www.facebook.com/pmgsystems" target="_blanck"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.linkedin.com/company/pmg-systems" target="_blanck"><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a href="http://instagram.com/_u/pmgsystems" target="_blanck"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--=====================================-->
+			<!--=           Offcanvas End           =-->
+			<!--=====================================-->
+		</div>
+</div>

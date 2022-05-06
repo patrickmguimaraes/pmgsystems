@@ -1,0 +1,28 @@
+.map-layout1 {
+	margin-top: rem(60px);
+    height: rem(450px);
+    border-radius: rem(10px);
+
+    @media only screen and (max-width: 767px) {
+        height: rem(350px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        height: rem(300px);
+    }
+}
+
+.map-layout2 {
+    height: rem(450px);
+    margin-top: rem(30px);
+    margin-bottom: rem(30px);
+    border-radius: rem(10px);
+
+    @media only screen and (max-width: 767px) {
+        height: rem(350px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        height: rem(300px);
+    }
+}

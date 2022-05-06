@@ -1,0 +1,25 @@
+.widget-category {
+	ul {
+		li {
+			margin-bottom: rem(10px);
+			font-size: rem(18px);
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				line-height: rem(35px);
+				display: block;
+				color: $color_body;
+				display: flex;
+				justify-content: space-between;
+				transition: all 0.3s ease-in-out;
+				span {
+
+				}
+				&:hover {
+					color: $color_primary;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,152 @@
+.section-padding-sm {
+    padding-top: rem($section_padding_sm_top);
+    padding-bottom: rem($section_padding_sm_bottom);
+
+    @media only screen and (max-width: 991px) {
+        padding-top: rem($section_padding_sm_top - 15px);
+        padding-bottom: rem($section_padding_sm_bottom - 15px);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-top: rem($section_padding_sm_top - 30px);
+        padding-bottom: rem($section_padding_sm_bottom - 30px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        padding-top: rem($section_padding_sm_top - 45px);
+        padding-bottom: rem($section_padding_sm_bottom - 45px);
+    }
+}
+
+.section-padding-md {
+    padding-top: rem($section_padding_md_top);
+    padding-bottom: rem($section_padding_md_bottom);
+
+    @media only screen and (max-width: 991px) {
+        padding-top: rem($section_padding_md_top - 15px);
+        padding-bottom: rem($section_padding_md_bottom - 15px);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-top: rem($section_padding_md_top - 30px);
+        padding-bottom: rem($section_padding_md_bottom - 30px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        padding-top: rem($section_padding_md_top - 45px);
+        padding-bottom: rem($section_padding_md_bottom - 45px);
+    }
+}
+
+.section-padding-sm-equal {
+    padding-top: rem($section_padding_sm_equal_top);
+    padding-bottom: rem($section_padding_sm_equal_bottom);
+
+    @media only screen and (max-width: 991px) {
+        padding-top: rem($section_padding_sm_equal_top - 15px);
+        padding-bottom: rem($section_padding_sm_equal_bottom - 15px);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-top: rem($section_padding_sm_equal_top - 30px);
+        padding-bottom: rem($section_padding_sm_equal_bottom - 30px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        padding-top: rem($section_padding_sm_equal_top - 45px);
+        padding-bottom: rem($section_padding_sm_equal_bottom - 45px);
+    }
+}
+
+.section-padding-md-equal {
+    padding-top: rem($section_padding_md_equal_top);
+    padding-bottom: rem($section_padding_md_equal_bottom);
+
+    @media only screen and (max-width: 991px) {
+        padding-top: rem($section_padding_md_equal_top - 15px);
+        padding-bottom: rem($section_padding_md_equal_bottom - 15px);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-top: rem($section_padding_md_equal_top - 30px);
+        padding-bottom: rem($section_padding_md_equal_bottom - 30px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        padding-top: rem($section_padding_md_equal_top - 45px);
+        padding-bottom: rem($section_padding_md_equal_bottom - 45px);
+    }
+}
+
+.section-padding-top-md {
+    padding-top: rem($section_padding_md_top);
+
+    @media only screen and (max-width: 991px) {
+        padding-top: rem($section_padding_md_top - 15px);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-top: rem($section_padding_md_top - 30px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        padding-top: rem($section_padding_md_top - 45px);
+    }
+}
+
+.section-padding-bottom-md {
+    padding-bottom: rem($section_padding_md_bottom);
+
+    @media only screen and (max-width: 991px) {
+        padding-bottom: rem($section_padding_md_bottom - 15px);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-bottom: rem($section_padding_md_bottom - 30px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        padding-bottom: rem($section_padding_md_bottom - 45px);
+    }
+}
+
+.section2-padding-md {
+    padding-top: rem($section2_padding_md_top);
+    padding-bottom: rem($section2_padding_md_bottom);
+
+    @media only screen and (max-width: 991px) {
+        padding-top: rem($section2_padding_md_top - 15px);
+        padding-bottom: rem($section2_padding_md_bottom - 15px);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-top: rem($section2_padding_md_top - 30px);
+        padding-bottom: rem($section2_padding_md_bottom - 30px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        padding-top: rem($section2_padding_md_top - 45px);
+        padding-bottom: rem($section2_padding_md_bottom - 45px);
+    }
+}
+
+.section2-padding-md-equal {
+    padding-top: rem($section2_padding_md_equal_top);
+    padding-bottom: rem($section2_padding_md_equal_bottom);
+
+    @media only screen and (max-width: 991px) {
+        padding-top: rem($section2_padding_md_equal_top - 15px);
+        padding-bottom: rem($section2_padding_md_equal_bottom - 15px);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-top: rem($section2_padding_md_equal_top - 30px);
+        padding-bottom: rem($section2_padding_md_equal_bottom - 30px);
+    }
+
+    @media only screen and (max-width: 575px) {
+        padding-top: rem($section2_padding_md_equal_top - 45px);
+        padding-bottom: rem($section2_padding_md_equal_bottom - 45px);
+    }
+}
+

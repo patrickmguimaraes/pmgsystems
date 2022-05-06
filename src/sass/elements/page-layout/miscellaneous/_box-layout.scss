@@ -1,0 +1,23 @@
+@media only screen and (min-width: 1200px) {
+    .box-layout {
+        .box-layout-child {
+            max-width: rem(1170px);
+            width: 100%;
+            margin: 0 auto;
+	    	.container-fluid {
+	    		padding-left: rem(30px);
+	    		padding-right: rem(30px);
+	    	}
+        }
+    }
+}
+
+@media only screen and (min-width: 1580px) {
+    .box-layout {
+        .box-layout-child {
+            max-width: rem(1550px);
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

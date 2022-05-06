@@ -1,0 +1,139 @@
+$font_primary: 'Roboto',
+sans-serif;
+$font_heading: 'Poppins',
+sans-serif;
+
+$color_light_primary: #fcf306;
+$color_dark_primary: #fcf306;
+
+
+$color_primary: #4873f3;
+$color_secondary: #3e61c3;
+$color_accent: #f5f5f5;
+$color_accent2: #f9fbfe;
+$color_accent3: #fbfbfe;
+$color_accent4: #f7fafe;
+$color_accent5: #f8f7f7;
+$color_accent6: #f8fbff;
+$color_accent7: #f1f7ff;
+$color_heading: #111111;
+$color_body: #646464;
+$color_border: #d9d9d9;
+$color_light: #ffffff;
+$color_dark: #000000;
+$color_entry_meta: #9b9b9b;
+$color_entry_meta2: #93959e;
+$color_btn: #b5b5b5;
+
+$color_california_dark: #fcf306;
+$color_california_light: #fcf306;
+$color_emerald_dark: #fcf306;
+$color_emerald_light: #fcf306;
+$color_royal_blue_dark: #fcf306;
+$color_royal_blue_light: #fcf306;
+$color_dodger_blue_dark: #fcf306;
+$color_dodger_blue_light: #fcf306;
+$color_sunset_orange_dark: #fcf306;
+$color_sunset_orange_light: #fcf306;
+$color_turquoise_dark: #fcf306;
+$color_turquoise_light: #fcf306;
+
+$color_california: #ff930e;
+$color_emerald: #18dc59;
+$color_royal_blue: #4873f3;
+$color_dodger_blue: #36bafe;
+$color_sunset_orange: #ff3838;
+$color_turquoise: #01daba;
+
+$color_heliotrope: #A34AF8;
+$color_west_side: #FE910B;
+$color_mountain_meadow: #14C171;
+$color_torch_red: #FF1E45;
+$color_persian_green: #02B7A2;
+$color_dodger_blue_2: #4771F9;
+$color_radical_red: #f91d5b;
+
+$tLight: 300;
+$tRegular: 400;
+$tMedium: 500;
+$tSemibold: 600;
+$tBold: 700;
+$tBlack: 900;
+$bodyLight: 300;
+$bodyRegular: 400;
+$bodyMedium: 500;
+$bodySemibold: 600;
+$bodyBold: 700;
+$bodyBlack: 900;
+
+$section_padding_base_md: 120px;
+$section_padding_base_xs: ($section_padding_base_md - 50px);
+$section_padding_base_sm: ($section_padding_base_md - 30px);
+$section_padding_base_lg: ($section_padding_base_md + 30px);
+$section_padding_base_xl: ($section_padding_base_md + 60px);
+$section_padding_line_height: 10px;
+
+$section_padding_xs_top: ($section_padding_base_xs - $section_padding_line_height);
+$section_padding_xs_bottom: ($section_padding_base_xs - 30px);
+$section_padding_sm_top: ($section_padding_base_sm - $section_padding_line_height);
+$section_padding_sm_bottom: ($section_padding_base_sm - 30px);
+$section_padding_md_top: ($section_padding_base_md - $section_padding_line_height);
+$section_padding_md_bottom: ($section_padding_base_md - 30px);
+$section_padding_lg_top: ($section_padding_base_lg - $section_padding_line_height);
+$section_padding_lg_bottom: ($section_padding_base_lg - 30px);
+$section_padding_xl_top: ($section_padding_base_xl - $section_padding_line_height);
+$section_padding_xl_bottom: ($section_padding_base_xl - 30px);
+
+$section_padding_xs_equal_top: $section_padding_base_xs;
+$section_padding_xs_equal_bottom: ($section_padding_base_xs - 30px);
+$section_padding_sm_equal_top: $section_padding_base_sm;
+$section_padding_sm_equal_bottom: ($section_padding_base_sm - 30px);
+$section_padding_md_equal_top: $section_padding_base_md;
+$section_padding_md_equal_bottom: ($section_padding_base_md - 30px);
+$section_padding_lg_equal_top: $section_padding_base_lg;
+$section_padding_lg_equal_bottom: ($section_padding_base_lg - 30px);
+$section_padding_xl_equal_top: $section_padding_base_xl;
+$section_padding_xl_equal_bottom: ($section_padding_base_xl - 30px);
+
+$section2_padding_base_md: 120px;
+$section2_padding_base_xs: ($section2_padding_base_md - 60px);
+$section2_padding_base_sm: ($section2_padding_base_md - 30px);
+$section2_padding_base_lg: ($section2_padding_base_md + 30px);
+$section2_padding_base_xl: ($section2_padding_base_md + 60px);
+$section2_padding_line_height: 12px;
+
+$section2_padding_xs_top: ($section2_padding_base_xs - $section2_padding_line_height);
+$section2_padding_xs_bottom: ($section2_padding_base_xs - 30px);
+$section2_padding_sm_top: ($section2_padding_base_sm - $section2_padding_line_height);
+$section2_padding_sm_bottom: ($section2_padding_base_sm - 30px);
+$section2_padding_md_top: ($section2_padding_base_md - $section2_padding_line_height);
+$section2_padding_md_bottom: ($section2_padding_base_md - 30px);
+$section2_padding_lg_top: ($section2_padding_base_lg - $section2_padding_line_height);
+$section2_padding_lg_bottom: ($section2_padding_base_lg - 30px);
+$section2_padding_xl_top: ($section2_padding_base_xl - $section2_padding_line_height);
+$section2_padding_xl_bottom: ($section2_padding_base_xl - 30px);
+
+$section2_padding_xs_equal_top: $section2_padding_base_xs;
+$section2_padding_xs_equal_bottom: ($section2_padding_base_xs - 30px);
+$section2_padding_sm_equal_top: $section2_padding_base_sm;
+$section2_padding_sm_equal_bottom: ($section2_padding_base_sm - 30px);
+$section2_padding_md_equal_top: $section2_padding_base_md;
+$section2_padding_md_equal_bottom: ($section2_padding_base_md - 30px);
+$section2_padding_lg_equal_top: $section2_padding_base_lg;
+$section2_padding_lg_equal_bottom: ($section2_padding_base_lg - 30px);
+$section2_padding_xl_equal_top: $section2_padding_base_xl;
+$section2_padding_xl_equal_bottom: ($section2_padding_base_xl - 30px);
+
+$btn_font_size: 18px;
+
+$btn_height_xs: 4px;
+$btn_height_sm: 6px;
+$btn_height_md: 8px;
+$btn_height_lg: 10px;
+$btn_height_xl: 12px;
+
+$btn_width_xs: 15px;
+$btn_width_sm: 20px;
+$btn_width_md: 25px;
+$btn_width_lg: 30px;
+$btn_width_xl: 35px;

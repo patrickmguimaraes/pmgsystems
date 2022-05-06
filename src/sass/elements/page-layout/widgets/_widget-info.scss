@@ -1,0 +1,27 @@
+.widget-info {
+	.item-figure {
+		margin-bottom: rem(50px);
+		img {
+			border-radius: rem(4px);
+		}
+		@media only screen and (max-width: 767px) {
+			margin-bottom: rem(30px);
+		}
+	}
+	.list-item {
+		li {
+			margin-bottom: rem(5px);
+			font-weight: 700;
+			font-size: rem(18px);
+			color: #111111;
+			span {
+				margin-left: rem(15px);
+				color: #646464;
+				font-weight: 400;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+.faq-wrap {
+	padding: rem(120px 0 90px);
+	@media only screen and (max-width: 991px) {
+		padding: rem(97px 0 75px);
+	}
+	@media only screen and (max-width: 767px) {
+		padding: rem(82px 0 60px);
+	}
+	@media only screen and (max-width: 575px) {
+		padding: rem(67px 0 45px);
+	}
+}
+.faq-box {
+	box-shadow: rem(0 0 35px 0) rgba(0, 0, 0, 0.06);
+	margin-bottom: rem(30px);
+    .single-item {
+        border: none;
+        border-bottom: rem(1px) solid #f4f4f4;
+        .item-nav {
+            padding: 0;
+            border: none;
+            margin-bottom: rem(0);
+            background-color: transparent;
+            font-family: $font_heading;
+            a {
+                border-radius: rem(0);
+                background-color: #f9fbfe;
+                color: $color_primary;
+                width: 100%;
+                display: block;
+                padding: rem(25px 80px 30px 60px);
+                font-size: rem(18px);
+                position: relative;
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+                &:after {
+                    position: absolute;
+                    content: "\f078";
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: rem(30px);
+                    font-size: rem(14px);
+                    z-index: 5;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 600;
+                    color: $color_primary;
+                }
+            }
+            a.collapsed {
+                background-color: $color_light;
+                color: #444444;
+                &:after {
+                	color: #b9b9b9;
+                    content: "\f077";
+                }
+                &:hover {
+                	background-color: #f9fbfe;
+                }
+            }
+        }
+        .item-content-wrap {
+            .item-content {
+                background-color: #f9fbfe;
+        		padding: rem(0 80px 25px 60px);
+        		transition: all 0.3s ease-in-out;
+        		p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &:last-child {
+        	border-bottom: 0;
+        }
+    }
+}

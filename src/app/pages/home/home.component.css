@@ -1,0 +1,7 @@
+select {
+    width: 100% !important; 
+    font-size: small !important; 
+    -webkit-appearance: none !important; 
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}

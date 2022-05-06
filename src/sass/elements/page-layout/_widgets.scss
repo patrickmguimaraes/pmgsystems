@@ -1,0 +1,74 @@
+/*--- Widget Common Style ---*/
+.template-sidebar {
+    margin-bottom: rem(30px);
+
+    .widget {
+        margin-bottom: rem(40px);
+        position: relative;
+        z-index: 1;
+
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .widget.widget-padding {
+        padding: rem(40px 45px);
+    }
+
+    .widget.widget-border {
+        border: rem(1px) solid $color_border;
+    }
+
+    .widget.widget-box-shadow {
+    	box-shadow: rem(0 0 111px 0) rgba(21, 32, 53, 0.07);
+    }
+
+    .theiaStickySidebar {
+    	>div {
+	        &:nth-last-child(2) {
+	            margin-bottom: 0 !important;
+	        }
+	    }
+    }
+}
+
+.widget-section-heading {
+    .item-heading {
+    	display: inline-block;
+        font-weight: 600;
+        color: $color_heading;
+    }
+}
+
+.widget-section-heading.heading-dark {
+    .item-heading {
+        color: $color_dark;
+    }
+}
+
+.widget-section-heading.heading-light {
+    .item-heading {
+        color: $color_light;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .template-sidebar {
+        margin-top: rem(40px);
+    }
+}
+
+
+/*--- Widget Info ---*/
+@import "widgets/widget-info";
+/*--- Widget Post ---*/
+@import "widgets/widget-post";
+/*--- Widget Category ---*/
+@import "widgets/widget-category";
+/*--- Widget Tag ---*/
+@import "widgets/widget-tag";
+/*--- Widget Search ---*/
+@import "widgets/widget-search";
+/*--- Widget Article ---*/
+@import "widgets/widget-article";

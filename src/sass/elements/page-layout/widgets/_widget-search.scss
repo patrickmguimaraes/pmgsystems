@@ -1,0 +1,114 @@
+.widget-search {
+	.stylish-input-group {
+		background: $color_light;
+		border: none;
+		height: rem(60px);
+		border-radius: rem(4px);
+		align-items: center;
+		@media only screen and (max-width: 767px) {
+			height: rem(50px);
+		}
+
+		.form-control {
+			padding: rem(0 10px 0 20px);
+			border: rem(1px) solid #d9d9d9;
+			box-shadow: none;
+			border-radius: rem(4px 0 0 4px);
+			background: $color_light;
+			color: $color_heading;
+			font-size: rem(16px);
+			height: 100%;
+		}
+
+		.input-group-addon {
+			padding: 0;
+			border: none;
+			background: transparent !important;
+			height: 100%;
+
+			button {
+				border-radius: rem(0 4px 4px 0);
+				padding: rem(0 25px);
+				height: 100%;
+				cursor: pointer;
+				position: relative;
+				z-index: 0;
+				border: 0;
+				color: $color_light;
+				font-weight: 500;
+				transition: all 0.3s ease-in-out;
+
+				&:after {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					right: inherit;
+					left: 0;
+					top: 0;
+					z-index: -1;
+					border-radius: rem(0 4px 4px 0);
+					background: $color_primary;
+					background-image: linear-gradient( 60deg, #4873f3 0%, #3e61c3 100%);
+					opacity: 1;
+					visibility: visible;
+					transition: all 0.5s ease-in-out;
+				}
+				&:before {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					right: inherit;
+					left: 0;
+					top: 0;
+					z-index: -1;
+					border-radius: rem(0 4px 4px 0);
+					background: $color_primary;
+					background: linear-gradient(245deg, rgba(#4873f3, 1) 40%, rgba(#3e61c3, 1) 100%);
+					opacity: 0;
+					visibility: hidden;
+					transition: all 0.5s ease-in-out;
+				}
+				&:hover {
+					&:after {
+						opacity: 0;
+						visibility: hidden;
+					}
+					&:before {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+
+		input.form-control::-webkit-input-placeholder,
+		textarea.form-control::-webkit-input-placeholder {
+			color: #a2a0a0;
+			font-size: rem(16px);
+		}
+
+		input.form-control::-moz-placeholder,
+		textarea.form-control::-moz-placeholder {
+			color: #a2a0a0;
+			font-size: rem(16px);
+		}
+
+		input.form-control:-moz-placeholder,
+		textarea.form-control:-moz-placeholder {
+			color: #a2a0a0;
+			font-size: rem(16px);
+		}
+
+		input.form-control:-ms-input-placeholder,
+		textarea.form-control:-ms-input-placeholder {
+			color: #a2a0a0;
+			font-size: rem(16px);
+		}
+	}
+}

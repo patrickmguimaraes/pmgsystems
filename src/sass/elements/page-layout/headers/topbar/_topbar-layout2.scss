@@ -1,0 +1,102 @@
+.topbar-layout2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+    background-color: rgba(#000000, 1);
+    transition: all 0.3s ease-in-out;
+
+    .topbar-menu {
+    	display: flex;
+    	flex-wrap: wrap;
+    	align-items: center;
+    	li {
+    		margin-right: rem(5px);
+    		padding-right: rem(5px);
+    		font-size: rem(14px);
+    		position: relative;
+    		z-index: 1;
+    		&:before {
+    			content: ".";
+    			position: absolute;
+    			z-index: 1;
+    			right: 0;
+    			top: 50%;
+			    transform: translateY(-50%);
+    			color: $color_light;
+    		}
+    		&:last-child {
+    			margin-right: rem(0);
+    			padding-right: rem(0);
+    			&:before {
+    				display: none;
+    			}
+    		}
+    		a {
+    			display: block;
+    			padding: rem(10px 10px);
+    			color: $color_light;
+    			transition: all 0.3s ease-in-out;
+    			&:hover {
+    				color: $color_primary;
+    			}
+    		}
+    	}
+    }
+
+    .topbar-social {
+        display: flex;
+        align-items: center;
+
+        .single-item {
+            margin-right: rem(10px);
+            font-size: rem(15px);
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                display: block;
+                height: rem(35px);
+                width:  rem(35px);
+                background-color: #262626;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                transition: all 0.3s ease-in-out;
+                i {
+                	color: $color_light;
+                	transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                	background-color: $color_primary;
+                }
+            }
+        }
+    }
+
+    .header-search {
+		padding: rem(10px 0);
+		border-radius: rem(45px);
+		transition: all 0.5s ease-in-out;
+		i {
+			&:before {
+				font-size: rem(19px);
+				font-weight: 600;
+				color: #d4d7de;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+		&:hover {
+			i {
+				&:before {
+					color: $color_primary;
+				}
+			}
+		}
+	}
+}

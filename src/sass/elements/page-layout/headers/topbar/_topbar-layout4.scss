@@ -1,0 +1,80 @@
+.topbar-layout4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+    background-color: rgba(#e7f1ff, 1);
+    transition: all 0.3s ease-in-out;
+
+    .topbar-menu {
+    	display: flex;
+    	flex-wrap: wrap;
+    	align-items: center;
+    	li {
+    		margin-right: rem(30px);
+    		padding-right: rem(30px);
+			font-size: rem(15px);
+			color: #646464;
+    		position: relative;
+			z-index: 1;
+			i {
+				margin-right: rem(10px);
+			}
+    		&:before {
+    			content: "";
+				position: absolute;
+				height: rem(25px);
+				width: rem(1px);
+    			z-index: 1;
+    			right: 0;
+    			top: 50%;
+			    transform: translateY(-50%);
+    			background-color: #c2c2c2;
+    		}
+    		&:last-child {
+    			margin-right: rem(0);
+    			padding-right: rem(0);
+    			&:before {
+    				display: none;
+    			}
+    		}
+    	}
+    }
+
+    .topbar-social {
+        display: flex;
+        align-items: center;
+
+        .single-item {
+            margin-right: rem(5px);
+            font-size: rem(15px);
+
+            &:last-child {
+				margin-right: 0;
+				a {
+					padding: rem(17px 0 17px 10px);
+				}
+            }
+
+            a {
+                display: block;
+                display: flex;
+                align-items: center;
+				justify-content: center;
+				padding: rem(17px 10px);
+                transition: all 0.3s ease-in-out;
+                i {
+                	color: #646464;
+                	transition: all 0.3s ease-in-out;
+                }
+                &:hover {					
+					i {
+						color: $color_primary;
+					}
+                }
+            }
+        }
+    }
+}

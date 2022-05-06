@@ -1,0 +1,111 @@
+#topbar-wrap {
+	position: relative;
+	z-index: 9;
+}
+
+.login-form {
+	margin-top: rem(30px);
+	border-radius: rem(4px);
+	right: rem(-1px);
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    width: rem(540px);
+    text-align: left;
+    background: #ffffff;
+    padding: rem(40px);
+    box-shadow: rem(0 0 10px 0) rgba($color_dark, 0.1);
+    .item-title {
+    	font-size: rem(48px);
+    	font-weight: 500;
+    	margin-bottom: rem(30px);
+    }
+    @media only screen and (max-width: 767px) {
+        margin-bottom: rem(15px);
+    }
+    label {
+        width: 100%;
+        font-size: rem(16px);
+        font-weight: 500;
+        margin-bottom: rem(5px);
+        color: $color_primary;
+    }
+    input {
+        height: rem(50px);
+        padding: rem(0 10px);
+        width: 100%;
+        border-radius: 0;
+        border: rem(1px) solid #c5c5c5;
+        margin-bottom: rem(20px);
+        color: $color_dark;
+        font-weight: 500;
+        font-size: rem(15px);
+        &:focus {
+        	box-shadow: none;
+        	border-color: #aaaaaa;
+        }
+    }
+    span {
+        margin-right: rem(15px);
+        color: $color_primary;
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: rem(12px);
+        }
+        @media only screen and (max-width: 479px) {
+            display: inline-block;
+            margin-left: 0;
+            margin-top: rem(15px);
+        }
+        input {
+            width: inherit;
+            height: inherit;
+            margin-right: rem(10px);
+            padding: rem(30px);
+        }
+    }
+    .item-btn {
+		margin-right: rem(10px);
+		font-size: rem(16px);
+		background-color: $color_primary;
+		color: $color_light;
+		border-radius: rem(4px);
+		border: rem(1px) solid $color_primary;
+		padding: rem(6px 30px);
+		transition: all 0.3s ease-in-out;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:focus {
+			outline: none;
+		}
+		&:hover {
+			background-color: transparent;
+			color: $color_primary;
+		}
+
+    }
+    input.form-control::-webkit-input-placeholder {
+        color: #646464;
+        font-weight: 300;
+    }
+
+    input.form-control::-moz-placeholder {
+        color: #646464;
+        font-weight: 300;
+    }
+
+    input.form-control:-moz-placeholder {
+        color: #646464;
+        font-weight: 300;
+    }
+
+    input.form-control:-ms-input-placeholder {
+        color: #646464;
+        font-weight: 300;
+    }
+}
+
+@import "topbar/topbar-layout1";
+@import "topbar/topbar-layout2";
+@import "topbar/topbar-layout3";
+@import "topbar/topbar-layout4";

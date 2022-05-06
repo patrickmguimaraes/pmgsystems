@@ -1,0 +1,18 @@
+.widget-article {
+	.list-item {
+		li {
+			margin-bottom: rem(12px);
+			font-family: $font_heading;
+			a {
+				color: #444444;
+				transition: all 0.3s ease-in-out;
+				&:hover {
+					color: $color_primary;
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

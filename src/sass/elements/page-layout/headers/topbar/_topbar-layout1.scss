@@ -1,0 +1,127 @@
+.topbar-layout1 {
+	padding-top: rem(30px);
+	padding-bottom: rem(30px);
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+    background-color: #f9fbfc;
+    transition: all 0.3s ease-in-out;
+
+    .social-follow {
+		margin-bottom: rem(-30px);
+		a.follow-single-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: rem(30px);
+			.item-icon {
+				margin-right: rem(10px);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #ebebeb;
+				height: rem(36px);
+				width: rem(36px);
+				border-radius: 50% 50% 0 50%;
+				transition: all 0.3s ease-in-out;
+			}
+			.item-icon.facebook {
+				color: #395795;
+			}
+			.item-icon.twitter {
+				color: #0ad2ea;
+			}
+			.item-icon.instagram {
+				color: #cf2e80;
+			}
+			.item-icon.pinterest {
+				color: #cb2027;
+			}
+			.item-icon.youtube {
+				color: #ff0001;
+			}
+			.item-icon.linkedin {
+				color: #0274b3;
+			}
+			.item-icon.behance {
+				color: #1869ff;
+			}
+			.item-icon.dribbble {
+				color: #ec498a;
+			}
+			.item-icon.skype {
+				color: #019dd7;
+			}
+			.item-content {
+				flex: 1;
+				color: #6c757d;
+				font-size: rem(15px);
+				line-height: 1.5;
+				font-weight: 700;
+				transform: translateY(rem(10px));
+			}
+			&:hover {
+				.item-icon {
+					color: $color_light;
+				}
+			}
+		}
+		a:hover {
+			.item-icon.facebook {
+				background-color: #395795;
+			}
+			.item-icon.twitter {
+				background-color: #0ad2ea;
+			}
+			.item-icon.instagram {
+				background-color: #cf2e80;
+			}
+			.item-icon.pinterest {
+				background-color: #cb2027;
+			}
+			.item-icon.youtube {
+				background-color: #ff0001;
+			}
+			.item-icon.linkedin {
+				background-color: #0274b3;
+			}
+			.item-icon.behance {
+				background-color: #1869ff;
+			}
+			.item-icon.dribbble {
+				background-color: #ec498a;
+			}
+			.item-icon.skype {
+				background-color: #019dd7;
+			}
+		}
+	}
+
+	.topbar-user {
+		padding: rem(10px 0);
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		color: $color_heading;
+		font-weight: 500;
+		transition: all 0.3s ease-in-out;
+		i {
+			margin-right: rem(10px);
+			&:before {
+				color: $color_primary;
+				font-size: rem(21px);
+				transition: all 0.3s ease-in-out;
+			}
+		}
+		&:hover {
+			color: $color_primary;
+			i {
+				&:before {
+					color: $color_primary;
+				}
+			}
+		}
+	}
+}

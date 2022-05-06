@@ -1,0 +1,118 @@
+
+.bg-color-light {
+    background-color: $color_light;
+}
+
+.bg-color-accent {
+    background-color: $color_accent;
+}
+
+.bg-color-accent2 {
+    background-color: $color_accent2;
+}
+.bg-color-accent3 {
+    background-color: $color_accent3;
+}
+.bg-color-accent4 {
+    background-color: $color_accent4;
+}
+.bg-color-accent5 {
+    background-color: $color_accent5;
+}
+.bg-color-accent6 {
+    background-color: $color_accent6;
+}
+.bg-color-accent7 {
+    background-color: $color_accent7;
+}
+
+
+.bg-gradient-layout1 {
+	position: relative;
+	z-index: 0;
+	&:before {
+		position: absolute;
+		z-index: -1;
+		content: "";
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+        background-image: linear-gradient( 60deg, rgb(82,63,255) 0%, rgb(117,14,213) 100%);
+	}
+}
+
+.bg-gradient-layout2 {
+	position: relative;
+	z-index: 0;
+	&:before {
+		position: absolute;
+		z-index: -1;
+		content: "";
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+        background-image: linear-gradient( 60deg, rgb(90,73,248) 0%, rgb(122,100,242) 100%);
+	}
+}
+
+.bg-gradient-layout3 {
+	position: relative;
+	z-index: 0;
+	&:before {
+		position: absolute;
+		z-index: -1;
+		content: "";
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+        background-image: linear-gradient( 60deg, rgb(253,253,253) 0%, rgb(250,249,255) 100%);
+	}
+}
+
+.bg-gradient-layout4 {
+	position: relative;
+	z-index: 0;
+	&:before {
+		position: absolute;
+		z-index: -1;
+		content: "";
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+        background-image: linear-gradient( 60deg, #4873f3 0%, #3e61c3 100%);
+	}
+}
+
+.bg-gradient-layout5 {
+	position: relative;
+	z-index: 0;
+	&:before {
+		position: absolute;
+		z-index: -1;
+		content: "";
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+        background-image: linear-gradient( 35deg, #5583ff 45%, #713aec 80%);
+	}
+}
+
+.bg-gradient-layout6 {
+	position: relative;
+	z-index: 0;
+	&:before {
+		position: absolute;
+		z-index: -1;
+		content: "";
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+        background-image: linear-gradient( 60deg, #5583ff 0%, #3e61c3 93%);
+	}
+}

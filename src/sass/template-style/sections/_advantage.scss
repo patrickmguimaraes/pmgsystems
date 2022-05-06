@@ -1,0 +1,34 @@
+.advantage-wrap-layout1 {
+	background-color: transparent;
+	position: relative;
+	z-index: 1;
+	@media only screen and (max-width: 991px) {
+		padding: rem(105px 0 75px);
+	}
+	@media only screen and (max-width: 767px) {
+		padding: rem(90px 0 60px);
+	}
+}
+
+.advantage-box-layout1 {
+	background-color: #ffffff;
+	padding: rem(30px 15px);
+	border-radius: rem(5px);
+	text-align: center;
+	box-shadow: rem(0 0 35px 0) rgba(#000000, 0.1);
+	transform: translateY(-50%);
+	@media only screen and (max-width: 991px) {
+		transform: translateY(0);
+		margin-bottom: 30px;
+	}
+	i {
+		color: $color_primary;
+		font-weight: 600;
+		font-size: rem(52px);
+		margin-bottom: rem(10px);
+	}
+	.item-title {
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,314 @@
+/*--- Newsletter Layout One ---*/
+.newsletter-form {
+    width: 60%;
+    margin: rem(0 auto 30px);
+    display: inline-block;
+
+    @media only screen and (max-width: 991px) {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 991px) {
+        height: rem(110px);
+    }
+
+    .stylish-input-group {
+        background: transparent;
+        border: 0;
+        height: rem(60px);
+        border-radius: rem(4px);
+
+        @media only screen and (max-width: 575px) {
+            display: block;
+        }
+
+        .item-icon {
+        	position: absolute;
+        	z-index: 4;
+        	left: rem(20px);
+        	top: 50%;
+        	transform: translateY(-50%);
+        }
+
+        .form-control {
+            padding: rem(5px 20px 5px 50px);
+            border: rem(1px) solid $color_border;
+            box-shadow: none;
+            border-radius: rem(4px 0 0 4px);
+            background: $color_light;
+            color: $color_heading;
+            height: rem(60px);
+            margin-bottom: 0;
+
+            @media only screen and (max-width: 575px) {
+                width: 100%;
+                height: rem(50px);
+                border-radius: rem(4px);
+                margin-bottom: rem(10px);
+            }
+        }
+
+        .input-group-addon {
+            padding: 0;
+            border: none;
+            border-radius: rem(0 4px 4px 0);
+            background: $color_primary;
+            margin-bottom: 0;
+            display: block;
+
+            @media only screen and (max-width: 575px) {
+                width: 100%;
+                border-radius: rem(4px);
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            button {
+                display: block;
+                padding: rem(0 40px);
+                height: rem(60px);
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+				position: relative;
+				z-index: 1;
+                transition: all 0.3s ease-in-out;
+				&:before {
+					border-radius: rem(0 4px 4px 0);
+					opacity: 1;
+					visibility: visible;
+					content: "";
+					position: absolute;
+					z-index: -1;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+					background-image: linear-gradient( 60deg, #4873f3 0%, #3e61c3 100%);
+                    transition: all 0.3s ease-in-out;
+                    @media only screen and (max-width: 575px) {
+                        border-radius: rem(4px);
+                    }
+				}
+				&:after {
+					border-radius: rem(0 4px 4px 0);
+					opacity: 0;
+					visibility: hidden;
+					content: "";
+					position: absolute;
+					z-index: -1;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+					background-image: linear-gradient( 60deg, #3e61c3 0%, #4873f3 100%);
+                    transition: all 0.3s ease-in-out;
+                    @media only screen and (max-width: 575px) {
+                        border-radius: rem(4px);
+                    }
+				}
+                @media only screen and (max-width: 575px) {
+                    width: 100%;
+                    height: rem(50px);
+                }
+
+                span {
+	                    color: $color_light;
+	            }
+
+                &:hover {
+                    &:after {
+                    	opacity: 1;
+                    	visibility: visible;
+                    }
+                    &:before {
+                    	opacity: 0;
+                    	visibility: hidden;
+                    }
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        input.form-control::-webkit-input-placeholder,
+        textarea.form-control::-webkit-input-placeholder {
+            color: $color_body;
+        }
+
+        input.form-control::-moz-placeholder,
+        textarea.form-control::-moz-placeholder {
+            color: $color_body;
+        }
+
+        input.form-control:-moz-placeholder,
+        textarea.form-control:-moz-placeholder {
+            color: $color_body;
+        }
+
+        input.form-control:-ms-input-placeholder,
+        textarea.form-control:-ms-input-placeholder {
+            color: $color_body;
+        }
+    }
+}
+
+/*--- Newsletter Layout Two ---*/
+.newsletter-form2 {
+    width: 60%;
+    margin: rem(0 auto 30px);
+    display: inline-block;
+
+    @media only screen and (max-width: 991px) {
+        width: 100%;
+    }
+
+    .stylish-input-group {
+        background: transparent;
+        border: 0;
+        height: rem(60px);
+        border-radius: rem(4px);
+
+        @media only screen and (max-width: 575px) {
+            display: block;
+        }
+
+        .item-icon {
+        	position: absolute;
+        	z-index: 4;
+        	left: rem(20px);
+        	top: 50%;
+        	transform: translateY(-50%);
+        	@media only screen and (max-width: 575px) {
+	            top: 44%;
+	        }
+        }
+
+        .form-control {
+            padding: rem(5px 20px 5px 50px);
+            border: rem(1px) solid $color_border;
+            box-shadow: none;
+            border-radius: rem(4px 0 0 4px);
+            background: $color_light;
+            color: $color_heading;
+            height: rem(60px);
+            margin-bottom: 0;
+
+            @media only screen and (max-width: 575px) {
+                width: 100%;
+                height: rem(50px);
+                border-radius: rem(4px);
+                margin-bottom: rem(10px);
+            }
+        }
+
+        .input-group-addon {
+            padding: 0;
+            border: none;
+            border-radius: rem(0 4px 4px 0);
+            margin-bottom: 0;
+            display: block;
+
+            @media only screen and (max-width: 575px) {
+                width: 100%;
+                border-radius: rem(4px);
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            button {
+                display: block;
+                padding: rem(0 40px);
+                height: rem(60px);
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+				position: relative;
+				z-index: 1;
+                transition: all 0.3s ease-in-out;
+				&:before {
+					border-radius: rem(0 4px 4px 0);
+					opacity: 1;
+					visibility: visible;
+					content: "";
+					position: absolute;
+					z-index: -1;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+					background-image: linear-gradient( 60deg, #ffffff 0%, #ffffff 100%);
+					transition: all 0.3s ease-in-out;
+				}
+				&:after {
+					border-radius: rem(0 4px 4px 0);
+					opacity: 0;
+					visibility: hidden;
+					content: "";
+					position: absolute;
+					z-index: -1;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+					background-image: linear-gradient( 60deg, #3e61c3 0%, #4873f3 100%);
+					transition: all 0.3s ease-in-out;
+				}
+                @media only screen and (max-width: 575px) {
+                    width: 100%;
+                    height: rem(50px);
+                }
+
+                span {
+                    color: $color_primary;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    &:after {
+                    	opacity: 1;
+                    	visibility: visible;
+                    }
+                    &:before {
+                    	opacity: 0;
+                    	visibility: hidden;
+                    }
+                    span {
+	                    color: $color_light;
+	                }
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        input.form-control::-webkit-input-placeholder,
+        textarea.form-control::-webkit-input-placeholder {
+            color: $color_body;
+        }
+
+        input.form-control::-moz-placeholder,
+        textarea.form-control::-moz-placeholder {
+            color: $color_body;
+        }
+
+        input.form-control:-moz-placeholder,
+        textarea.form-control:-moz-placeholder {
+            color: $color_body;
+        }
+
+        input.form-control:-ms-input-placeholder,
+        textarea.form-control:-ms-input-placeholder {
+            color: $color_body;
+        }
+    }
+}

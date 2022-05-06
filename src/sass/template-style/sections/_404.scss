@@ -1,0 +1,77 @@
+.error-page-wrap {
+	padding: rem(120px 0);
+	@media only screen and (max-width: 991px) {
+		padding: rem(105px 0);
+	}
+	@media only screen and (max-width: 767px) {
+		padding: rem(90px 0);
+	}
+	@media only screen and (max-width: 575px) {
+		padding: rem(75px 0);
+	}
+}
+.error-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	.item-figure {
+		margin-bottom: rem(50px);
+		text-align: center;
+		@media only screen and (max-width: 991px) {
+			margin-bottom: rem(40px);
+		}
+	}
+	.item-content {
+		text-align: center;
+		.item-title {
+			color: $color_heading;
+			font-weight: 600;
+			font-size: rem(46px);
+			@media only screen and (max-width: 991px) {
+				font-size: rem(40px);
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: rem(36px);
+				margin-bottom: rem(10px);
+			}
+			@media only screen and (max-width: 575px) {
+				font-size: rem(30px);
+			}
+		}
+		p {
+			width: 65%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: rem(50px);
+			@media only screen and (max-width: 991px) {
+				width: 75%;
+				margin-bottom: rem(40px);
+			}
+			@media only screen and (max-width: 767px) {
+				width: 85%;
+				margin-bottom: rem(30px);
+			}
+			@media only screen and (max-width: 575px) {
+				width: 100%;
+			}
+		}
+		.item-btn {
+			display: inline-block;
+			font-size: rem(20px);
+			font-weight: 500;
+			padding: rem(14px 32px);
+			background-color: $color_primary;
+			border-radius: rem(4px);
+			color: $color_light;
+			transition: all 0.3s ease-in-out;
+			i {
+				margin-right: rem(10px);
+			}
+			&:hover {
+				background-color: $color_dark_primary;
+			}
+		}
+	}
+}

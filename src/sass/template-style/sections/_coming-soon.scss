@@ -1,0 +1,193 @@
+.coming-soon-wrap {
+	padding-top: rem(205px);
+	padding-bottom: rem(120px);
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	@media only screen and (max-width: 991px) {
+		padding-top: rem(105px);
+		padding-bottom: rem(105px);
+	}
+	@media only screen and (max-width: 767px) {
+		display: block;
+		padding-top: rem(90px);
+		padding-bottom: rem(90px);
+	}
+	@media only screen and (max-width: 575px) {
+		padding-top: rem(75px);
+		padding-bottom: rem(75px);
+	}
+	@media only screen and (max-width: 479px) {
+		padding-top: rem(60px);
+		padding-bottom: rem(60px);
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-image: linear-gradient( 35deg, #5583ff 10%, #3e61c3 100%);
+	}
+	.shape-holder {
+		li {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			opacity: 0;
+			@media only screen and (max-width: 767px) {
+				left: inherit;
+				right: inherit;
+			}
+			svg {
+				margin: 0 auto;
+			}
+			&:nth-child(1n) {
+                animation: circle_animation 14s infinite;
+            }
+            &:nth-child(2n) {
+                animation: circle_animation 14s infinite;
+                animation-delay: 2s;
+            }
+            &:nth-child(3n) {
+                animation: circle_animation 14s infinite;
+                animation-delay: 4s;
+            }
+            &:nth-child(4n) {
+                animation: circle_animation 14s infinite;
+                animation-delay: 6s;
+            }
+            &:nth-child(5n) {
+                animation: circle_animation 14s infinite;
+                animation-delay: 8s;
+            }
+            &:nth-child(6n) {
+                animation: circle_animation 14s infinite;
+                animation-delay: 10s;
+            }
+            &:nth-child(7n) {
+                animation: circle_animation 14s infinite;
+                animation-delay: 12s;
+            }
+		}
+	}
+	.coming-soon-box {
+		text-align: center;
+		.countdown {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: rem(30px);
+			.countdown-section {
+				margin: rem(0 15px 15px);
+		        background: transparent;
+				height: rem(160px);
+				width: rem(160px);
+				border: rem(1px) solid rgba(#bda9f5, 0.5);
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+			    flex-direction: column;
+			    justify-content: center;
+			    @media only screen and (max-width: 1199px) {
+					height: rem(130px);
+					width: rem(130px);
+					padding-top: rem(15px);
+				}
+		        h2 {
+		            font-size: rem(40px);
+		            color: $color_light;
+		            margin-bottom: 0;
+		            font-weight: 600;
+		            @media only screen and (max-width: 1199px) {
+						font-size: rem(36px);
+						line-height: rem(30px);
+					}
+		        }
+		        h3 {
+		            color: $color_light;
+		            margin-bottom: 0;
+		            font-size: rem(24px);
+		            font-weight: 300;
+		            @media only screen and (max-width: 1199px) {
+						font-size: rem(20px);
+					}
+		        }
+		    }
+	    }
+		.sub-title {
+			color: $color_light;
+			font-size: rem(28px);
+			margin-bottom: rem(15px);
+			@media only screen and (max-width: 991px) {
+				font-size: rem(26px);
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: rem(24px);
+			}
+			@media only screen and (max-width: 575px) {
+				font-size: rem(20px);
+			}
+		}
+		.main-title {
+			color: $color_light;
+			font-size: rem(55px);
+			font-weight: 500;
+			width: 70%;
+			line-height: rem(70px);
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: rem(45px);
+			@media only screen and (max-width: 991px) {
+				font-size: rem(46px);
+				line-height: rem(65px);
+				width: 80%;
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: rem(40px);
+				line-height: rem(58px);
+				width: 80%;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: rem(34px);
+				line-height: rem(44px);
+				width: 90%;
+			}
+			@media only screen and (max-width: 575px) {
+				font-size: rem(28px);
+				line-height: rem(38px);
+				width: 100%;
+			}
+			@media only screen and (max-width: 479px) {
+				font-size: rem(26px);
+				line-height: rem(36px);
+			}
+		}
+		.item-btn {
+			padding: rem(12px 40px);
+			font-size: rem(18px);
+		}
+	}
+
+	@keyframes circle_animation {
+	    from {
+	    	z-index: -1;
+	        transform: translateY(-50%) scale(0);
+	        opacity: 1;
+	    }
+	    to {
+	    	transform: translateY(-50%) scale(1);
+	        opacity: 0;
+	        z-index: -2;
+	    }
+	}
+}

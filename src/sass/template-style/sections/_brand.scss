@@ -1,0 +1,46 @@
+.brand-wrap-layout1 {
+	padding: rem(63px 0);
+	.owl-carousel.owl-drag .owl-item {
+		text-align: center;
+	}
+}
+
+.brand-box-layout1 {
+	display: inline-flex;
+	align-items: center;
+	cursor: all-scroll;
+	filter: grayscale(100%);
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		filter: grayscale(0);
+	}
+}
+
+.brand-wrap-layout2 {
+	padding: rem(0 0 90px);
+	@media only screen and (max-width: 991px) {
+        padding: rem(0 0 75px);
+    }
+    @media only screen and (max-width: 767px) {
+        padding: rem(0 0 60px);
+    }
+    @media only screen and (max-width: 575px) {
+        padding: rem(0 0 45px);
+    }
+}
+
+.brand-box-layout2 {
+	box-shadow: rem(0 0 35px 0) rgba(0, 0, 0, 0.05);
+	background-color: $color_light;
+	height: rem(180px);
+	width: 100%;
+	margin-bottom: rem(30px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	filter: grayscale(100%);
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		filter: grayscale(0);
+	}
+}

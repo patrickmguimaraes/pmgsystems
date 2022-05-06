@@ -1,0 +1,33 @@
+#pp-nav.right {
+	right: rem(100px);
+}
+
+#pp-nav {
+	@media only screen and (max-width: 991px) {
+	    display: none;
+	}
+	ul {
+		li {
+			height: rem(15px);
+			margin: 0;
+			a {
+				span {
+					width: rem(30px);
+					border-radius: rem(4px);
+					height: rem(3px);
+					border: 0;
+					right: 0;
+					left: inherit;
+					background-color: rgba($color_light, 0.50);
+					transition: all 0.5s ease-in-out;
+				}
+			}
+			a.active {
+				span {
+					width: rem(40px);
+					background-color: rgba($color_light, 0.50);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,201 @@
+.history-wrap-layout1 {
+	padding: rem(106px 0 120px);
+	background-color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	@media only screen and (max-width: 1199px) {
+		padding: rem(91px 0 105px);
+	}
+	@media only screen and (max-width: 991px) {
+		padding: rem(76px 0 90px);
+	}
+	@media only screen and (max-width: 767px) {
+		padding: rem(61px 0 75px);
+	}
+	@media only screen and (max-width: 575px) {
+		padding: rem(46px 0 60px);
+	}
+	.animated-figure {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		@media only screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+.history-inner-layout1 {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		background-color: #e6e6e6;
+		transform: translateX(-50%);
+		top: 0;
+		width: rem(2px);
+		height: rem(calc(100% - 26px));
+		@media only screen and (max-width: 991px) {
+			left: rem(105px);
+			height: rem(calc(100% - 50px));
+			top: rem(20px);
+		}
+		@media only screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+	.history-box-layout1 {
+		display: flex;
+		max-width: rem(500px);
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		margin-bottom: rem(30px);
+		@media only screen and (max-width: 1199px) {
+			max-width: rem(450px);
+		}
+		@media only screen and (max-width: 991px) {
+			max-width: inherit;
+		}
+		@media only screen and (max-width: 575px) {
+			display: block;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: rem(20px);
+			height: rem(20px);
+			border-radius: 50%;
+			background-color: $color_primary;
+			transition: all 0.3s ease-in-out;
+			@media only screen and (max-width: 767px) {
+				display: none;
+			}
+		}
+		.item-year {
+			font-size: rem(30px);
+			color: #111111;
+			font-weight: 700;
+			font-family: $font_heading;
+			position: absolute;
+			z-index: 1;
+			@media only screen and (max-width: 991px) {
+				position: inherit;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: rem(24px);
+			}
+		}
+		&:nth-child(odd) {
+			left: 50%;
+			&:before {
+				left: rem(-10px);
+			}
+			.item-year {
+				left: rem(-115px);
+			}
+			.item-content {
+				margin-left: rem(50px);
+			}
+			@media only screen and (max-width: 991px) {
+				left: 0;
+				&:before {
+					left: rem(90px);
+				}
+				.item-year {
+					left: 0;
+				}
+				.item-content {
+					margin-left: rem(80px);
+				}
+			}
+			@media only screen and (max-width: 767px) {
+				.item-content {
+					margin-left: rem(30px);
+				}
+			}
+			@media only screen and (max-width: 575px) {
+				text-align: center;
+				.item-content {
+					margin-left: 0;
+				}
+				.item-year {
+					margin-bottom: 15px;;
+				}
+			}
+		}
+		&:nth-child(even) {
+			left: rem(calc(50% - 500px));
+			text-align: right;
+			&:before {
+				right: rem(-10px);
+			}
+			.item-year {
+				right: rem(-115px);
+			}
+			.item-content {
+				margin-right: rem(50px);
+			}
+			@media only screen and (max-width: 1199px) {
+				left: rem(calc(50% - 450px));
+			}
+			@media only screen and (max-width: 991px) {
+				left: 0;
+				text-align: left;
+				&:before {
+					right: inherit;
+				}
+				.item-year {
+					right: inherit;
+				}
+				.item-content {
+					margin-right: inherit;
+				}
+				&:before {
+					left: rem(90px);
+				}
+				.item-year {
+					left: 0;
+				}
+				.item-content {
+					margin-left: rem(80px);
+				}
+			}
+			@media only screen and (max-width: 767px) {
+				.item-content {
+					margin-left: rem(30px);
+					margin-right: 0;
+				}
+			}
+			@media only screen and (max-width: 575px) {
+				text-align: center;
+				.item-content {
+					margin-left: 0;
+				}
+				.item-year {
+					margin-bottom: 15px;;
+				}
+			}
+		}
+		.item-content {
+			background-color: #ffffff;
+			padding: rem(30px 40px);
+			box-shadow: rem(0 0 50px 0) rgba(0, 0, 0, 0.07);
+			h3 {
+				font-weight: 600;
+				margin-bottom: rem(5px);
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

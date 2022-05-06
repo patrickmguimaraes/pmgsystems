@@ -1,0 +1,322 @@
+.section-heading {
+	position: relative;
+	z-index: 0;
+	text-align: center;
+	margin-bottom: rem(55px);
+	@media only screen and (max-width: 767px) {
+        margin-bottom: rem(45px);
+    }
+    @media only screen and (max-width: 575px) {
+        margin-bottom: rem(35px);
+    }
+	.heading-sub-title {
+		text-align: center;
+		color: $color_primary;
+		font-weight: 500;
+		letter-spacing: rem(4px);
+	}
+	.heading-main-title {
+		font-weight: 700;
+	}
+	.heading-paragraph {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		@media only screen and (max-width: 1199px) {
+	        width: 70%;
+	    }
+		@media only screen and (max-width: 991px) {
+	        width: 100%;
+	    }
+	}
+}
+
+.section-heading.heading-dark {
+	.heading-main-title {
+		color: $color_dark;
+	}
+	.heading-icon {
+		line-height: 1;
+		color: $color_primary;
+		background: -webkit-linear-gradient($color_primary, $color_primary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		position: relative;
+		z-index: 1;
+		margin-bottom: rem(20px);
+		i {
+			margin-top: rem(5px);
+			&:before {
+				font-size: rem(30px);
+			}
+		}
+	}
+}
+
+.section-heading.heading-light {
+	.heading-main-title {
+		color: $color_light;
+	}
+	.heading-icon {
+		line-height: 1;
+		color: $color_light_primary;
+		background: -webkit-linear-gradient($color_light_primary, $color_dark_primary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		margin-bottom: rem(20px);
+		&:before {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			width: rem(60px);
+			height: rem(1px);
+			border-bottom: rem(1px) dashed rgba($color_light, 0.21);
+			left: rem(50px);
+			top: 50%;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			width: rem(60px);
+			height: rem(1px);
+			border-bottom: rem(1px) dashed rgba($color_light, 0.21);
+			right: rem(50px);
+			top: 50%;
+		}
+		i {
+			&:before {
+				font-size: rem(30px);
+			}
+		}
+	}
+	.heading-sub-title {
+		color: $color_light;
+	}
+	.heading-paragraph {
+		color: $color_light;
+	}
+}
+
+.section-heading.heading-layout1 {
+	.heading-main-title {
+		margin-bottom: rem(15px);
+		@media only screen and (max-width: 767px) {
+	        margin-bottom: rem(10px);
+	    }
+	    @media only screen and (max-width: 575px) {
+	        margin-bottom: rem(5px);
+	    }
+	}
+}
+
+.section-heading.heading-layout2 {
+	.heading-sub-title {		
+		display: inline-block;
+		padding: rem(7px 22px 6px);
+		border-radius: rem(4px);
+		margin-bottom: rem(20px);
+		letter-spacing: rem(2px);
+	}
+	.heading-main-title {
+		margin-bottom: rem(15px);
+		width:50%;
+		margin-left: auto;
+		margin-right: auto;
+		@media only screen and (max-width: 991px) {
+			width: 80%;
+	    }
+		@media only screen and (max-width: 767px) {
+			margin-bottom: rem(10px);
+			width: 100%;
+	    }
+	    @media only screen and (max-width: 575px) {
+	        margin-bottom: rem(5px);
+	    }
+	}
+	&.color-heliotrope {
+		.heading-sub-title {
+			background-color: rgba($color_heliotrope, 0.21);
+			color: $color_heliotrope;
+		}
+	}
+	&.color-mountain-meadow {
+		.heading-sub-title {
+			background-color: rgba($color_mountain_meadow, 0.21);
+			color: $color_mountain_meadow;
+		}
+	}
+	&.color-torch-red {
+		.heading-sub-title {
+			background-color: rgba($color_torch_red, 0.21);
+			color: $color_torch_red;
+		}
+	}
+}
+
+.section-heading.heading-layout3 {
+	margin-bottom: 0;
+	text-align: left;
+	.heading-sub-title {		
+		display: inline-block;
+		padding: rem(6px 22px 5px);
+		border-radius: rem(4px);
+		margin-bottom: rem(20px);
+		letter-spacing: rem(2px);
+	}
+	&.color-west-side {
+		.heading-sub-title {
+			background-color: rgba($color_west_side, 0.21);
+			color: $color_west_side;
+		}
+	}
+	&.color-persian-green {
+		.heading-sub-title {
+			background-color: rgba($color_persian_green, 0.21);
+			color: $color_persian_green;
+		}
+	}
+}
+
+.section-heading.heading-layout4 {
+	margin-bottom: rem(45px);
+	.heading-sub-title {		
+		display: inline-block;
+		padding: rem(6px 22px 0);
+		letter-spacing: 0;
+	}
+	.heading-main-title {
+		width: 45%;
+		margin-left: auto;
+		margin-right: auto;
+		@media only screen and (max-width: 1199px) {
+			width: 60%;
+	    }
+		@media only screen and (max-width: 991px) {
+			width: 80%;
+	    }
+		@media only screen and (max-width: 767px) {
+			width: 100%;
+	    }
+	}
+}
+
+.heading-wrap-layout5 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;	
+	.item-btn {
+		margin-bottom: rem(60px);
+	}
+}
+
+.section-heading.heading-layout5 {
+	flex: 1;
+	text-align: left;
+	margin-bottom: rem(45px);
+	@media only screen and (max-width: 767px) {
+		flex: inherit;
+		margin-bottom: 0;
+	}
+	.heading-sub-title {		
+		display: inline-block;
+		padding: 0;
+		letter-spacing: 0;
+	}
+	.heading-main-title {
+		width: 43%;
+		@media only screen and (max-width: 1199px) {
+			width: 70%;
+	    }
+		@media only screen and (max-width: 991px) {
+			width: 90%;
+	    }
+		@media only screen and (max-width: 767px) {
+			width: 100%;
+	    }
+	}	
+}
+
+.section-heading.heading-layout6 {
+	.heading-main-title {
+		margin-bottom: rem(15px);
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		@media only screen and (max-width: 991px) {
+			width: 80%;
+	    }
+		@media only screen and (max-width: 767px) {
+			margin-bottom: rem(10px);
+			width: 100%;
+	    }
+	    @media only screen and (max-width: 575px) {
+	        margin-bottom: rem(5px);
+		}
+	}
+}
+
+.section-heading.heading-layout7 {
+	margin-bottom: rem(30px);
+	text-align: left;
+	@media only screen and (max-width: 1199px) {
+		text-align: center;
+	}
+	.heading-main-title {
+		max-width: rem(600px);
+		width: 100%;
+		@media only screen and (max-width: 1199px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+
+.inner-section-heading {
+	font-size: rem(30px);
+	font-weight: 600;
+}
+
+.has-animation {
+	.heading-icon {
+		display: inline-flex;
+		align-items: flex-start;
+		.dash-left {
+			margin-right: rem(25px);
+			.dashed1 {
+			  stroke-dashoffset: 100;
+			}
+		}
+		.dash-right {
+			margin-left: rem(15px);
+			.dashed1 {
+			  stroke-dashoffset: -100;
+			}
+		}
+		.dashed1 {
+		  stroke-dasharray: 100;
+		}
+		.dashed2 {
+		  stroke-dasharray: 4;
+		}
+		@keyframes dash_animation {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+	}
+}
+
+.has-animation.active-animation {
+	.heading-icon {
+		.dashed1 {
+			animation: dash_animation 1.5s linear forwards;
+		}
+	}
+}
+

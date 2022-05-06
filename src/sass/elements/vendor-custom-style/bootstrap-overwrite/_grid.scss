@@ -1,0 +1,83 @@
+@media only screen and (min-width: 1240px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.container-fluid.full-width {
+	padding-left: 0;
+	padding-right: 0;
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.row>[class^="col-"],
+	.row>[class*=" col-"] {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row.gutters-2 {
+    padding-left: rem(14px);
+    padding-right: rem(14px);
+
+    >[class^="col-"] {
+        padding-left: rem(1px);
+        padding-right: rem(1px);
+    }
+}
+
+.row.gutters-20 {
+    padding-left: rem(5px);
+    padding-right: rem(5px);
+
+    >[class^="col-"] {
+        padding-left: rem(10px);
+        padding-right: rem(10px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .row.gutters-50 {
+        margin-left: rem(-25px);
+        margin-right: rem(-25px);
+
+        >[class^="col-"] {
+            padding-left: rem(25px);
+            padding-right: rem(25px);
+        }
+    }
+
+    .row.gutters-80 {
+        margin-left: rem(-40px);
+        margin-right: rem(-40px);
+
+        >[class^="col-"] {
+            padding-left: rem(40px);
+            padding-right: rem(40px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .col-xl-5th {
+		flex: 0 0 20%;
+    	max-width: 20%;
+    	position: relative;
+	    width: 100%;
+	    padding-right: rem(15px);
+	    padding-left: rem(15px);
+    }
+}
